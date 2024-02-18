@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<view:ContentPageBase
+    x:Class="BingoMania.Features.Startup.StartupPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://schemas.microsoft.com/dotnet/2021/maui/design"
+    xmlns:local="clr-namespace:BingoMania.Features.Startup"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:view="clr-namespace:BingoMania.Framework.Views"
+    x:DataType="local:StartupPageViewModel"
+    x:TypeArguments="local:StartupPageViewModel"
+    mc:Ignorable="d">
+    <StackLayout>
+        <Label Text="Please wait while application is loading through the startup process" />
+
+        <Button Command="{Binding StartCommand}" Text="Start Application" />
+    </StackLayout>
+</view:ContentPageBase>
